@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Shannon Ma — VP Engineering at Patreon. Engineering leader behind products from Patreon, Instagram, Facebook, and Apple."/>
+  <title>Shannon Ma</title>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      color: #1a1a1a;
+      line-height: 1.5;
+      background: #fff;
+    }
+
+    body {
+      max-width: 720px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+
+    /* ── Header ── */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 2rem;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+      color: #1d4ed8;
+    }
+
+    .bio {
+      font-size: 0.875rem;
+      color: #444;
+      line-height: 1.65;
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: right;
+      font-size: 0.8rem;
+      color: #555;
+      line-height: 1.6;
+      white-space: nowrap;
+      flex-shrink: 0;
+      gap: 0.5rem;
+    }
+
+    .contact a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .photo {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    /* ── Sections ── */
+    section {
+      margin-bottom: 1.75rem;
+    }
+
+    .section-divider {
+      border: none;
+      border-top: 1px solid #e0e0e0;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #999;
+      padding-top: 0.75rem;
+      padding-bottom: 0.25rem;
+      border-top: 1px solid #e0e0e0;
+      margin-bottom: 0.75rem;
+    }
+
+    /* ── Job entries ── */
+    .job {
+      margin-bottom: 1.5rem;
+    }
+
+    .job:last-child {
+      margin-bottom: 2.5rem;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.1rem;
+    }
+
+    .job-company {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .job-dates {
+      font-size: 0.8rem;
+      color: #999;
+      white-space: nowrap;
+    }
+
+    .job-title {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 0.65rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      font-size: 0.875rem;
+      margin-bottom: 0.3rem;
+      line-height: 1.55;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      text-decoration-color: #bbb;
+      text-underline-offset: 2px;
+    }
+
+    a:hover {
+      text-decoration-style: solid;
+      text-decoration-color: currentColor;
+    }
+
+    /* ── Print ── */
+    @media print {
+      body {
+        margin: 0;
+        padding: 0.65in 0.75in;
+        max-width: 100%;
+      }
+
+      @page {
+        margin: 0;
+      }
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 560px) {
+      header {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .contact {
+        text-align: left;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <h1>Shannon Ma</h1>
+      <p class="bio">I build engineering organizations behind consumer products at scale — from first hire to 150+ engineers, from prototype to platform. My work can be seen in products from Patreon, Instagram, Facebook, and Apple. Outside of work I enjoy surfing, cooking, and being a dad and husband.</p>
+    </div>
+    <div class="contact">
+      <img src="me.jpg" alt="Shannon Ma" class="photo" width="72" height="72" fetchpriority="high"/>
+      <a href="mailto:hello@shannonma.co">hello@shannonma.co</a>
+      <p>San Francisco, CA</p>
+    </div>
+  </header>
+
+  <section>
+    <hr class="section-divider">
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Patreon</span>
+        <span class="job-dates">2022 – Present</span>
+      </div>
+      <p class="job-title">VP Engineering</p>
+      <ul>
+        <li>Lead 150+ engineers transforming Patreon into a creator-first social network — working closely with product and design to shape what we build and how we build it. Recognized by <a href="https://www.fastcompany.com/91497300/social-media-most-innovative-companies-2026-reddit-patreon-letterboxd-weverse-doing-things-tumblr-beli-twitch-pinterest-bite-sight">Fast Company</a> and the <a href="https://www.nytimes.com/2025/11/19/opinion/patreon-algorithms-social-media-internet.html">New York Times</a>.</li>
+        <li>Building AI-native infrastructure for the team — agent-friendly dev environments, cross-repo tooling, and automated tests to ship safely at speed.</li>
+        <li>Grew creator payouts from ~$3.5B to $10B+ by pushing Patreon beyond subscriptions into new ways for creators to earn — shops, one-time purchases, <a href="https://techcrunch.com/2024/06/25/patreon-introduces-a-gifting-feature-and-other-creator-tools/">gifting</a>, and <a href="https://techcrunch.com/2024/09/17/patreon-launches-features-to-automate-away-creators-administrative-workload-and-help-them-make-more-money/">conversion tools</a>.</li>
+        <li>Built mobile from scratch; shipped the <a href="https://techcrunch.com/2023/10/04/patreon-launches-new-features-a-redesigned-app-and-a-new-look/">new Patreon app</a> and drove a 3× increase in DAU.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Instagram</span>
+        <span class="job-dates">2017 – 2021</span>
+      </div>
+      <p class="job-title">Senior Engineering Manager</p>
+      <ul>
+        <li>Led 30+ engineers across Direct Messaging, Avatars, and new private communication formats.</li>
+        <li>Built the teams behind <a href="https://techcrunch.com/2019/10/03/instagram-launches-threads-a-close-friends-chat-app-with-auto-status/">Threads</a>, the redesigned Instagram Profile, <a href="https://techcrunch.com/2017/12/05/instagram-stories-highlights/">Stories Archive &amp; Highlights</a>, and <a href="https://techcrunch.com/2018/11/30/how-instagram-close-friends-works/">Close Friends</a>. Awarded 3 patents.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Facebook</span>
+        <span class="job-dates">2013 – 2017</span>
+      </div>
+      <p class="job-title">Software Engineer → Engineering Manager</p>
+      <ul>
+        <li>Grew <a href="https://www.theatlantic.com/technology/archive/2015/10/72-hours-with-facebook-instant-articles/412171/">Instant Articles</a> readership 10× after transitioning from one of two founding engineers to managing the team. Awarded 1 patent.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Apple</span>
+        <span class="job-dates">2009 – 2013</span>
+      </div>
+      <p class="job-title">Software Engineer</p>
+      <ul>
+        <li>Built Apple's first indoor positioning technology concept and iBeacon. Awarded 18 patents.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">Education</div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">University of Central Florida</span>
+      </div>
+      <p class="job-title">BS Computer Science, Magna Cum Laude</p>
+    </div>
+  </section>
+
+</body>
+</html>
