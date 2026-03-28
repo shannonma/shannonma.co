@@ -6,6 +6,7 @@
   <meta name="description" content="Shannon Ma — VP Engineering at Patreon. Engineering leader behind products from Patreon, Instagram, Facebook, and Apple."/>
   <title>Shannon Ma</title>
   <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="preload" as="image" href="me.webp" type="image/webp"/>
   <meta property="og:title" content="Shannon Ma"/>
   <meta property="og:description" content="VP Engineering at Patreon. Engineering leader behind products from Patreon, Instagram, Facebook, and Apple."/>
   <meta property="og:image" content="https://shannonma.co/surf.jpg"/>
@@ -86,7 +87,7 @@
     }
 
     .contact-sep {
-      color: #ccc;
+      color: #767676;
     }
 
     .photo {
@@ -114,7 +115,7 @@
       font-weight: 700;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: #999;
+      color: #767676;
       padding-top: 0.75rem;
       padding-bottom: 0.25rem;
       border-top: 1px solid #e0e0e0;
@@ -144,7 +145,7 @@
 
     .job-dates {
       font-size: 0.8rem;
-      color: #999;
+      color: #767676;
       white-space: nowrap;
     }
 
@@ -205,9 +206,13 @@
 </head>
 <body>
 
+  <main>
   <header>
     <div class="header-left">
-      <img src="me.jpg" alt="Shannon Ma" class="photo" width="64" height="64" fetchpriority="high"/>
+      <picture>
+        <source srcset="me.webp" type="image/webp"/>
+        <img src="me.jpg" alt="Shannon Ma" class="photo" width="64" height="64" fetchpriority="high"/>
+      </picture>
       <div class="header-text">
         <h1>Shannon Ma</h1>
         <div class="contact">
@@ -283,5 +288,6 @@
     </div>
   </section>
 
+  </main>
 </body>
 </html>
