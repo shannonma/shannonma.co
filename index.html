@@ -3,15 +3,33 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="description" content="Shannon Ma — VP Engineering at Patreon. Engineering leader behind products from Patreon, Instagram, Facebook, and Apple."/>
-  <title>Shannon Ma</title>
+  <meta name="description" content="Shannon Ma — Engineer first, leader second. Shipped products used by hundreds of millions at Patreon, Instagram, Facebook, and Apple."/>
+  <title>Shannon Ma — VP Engineering</title>
+  <link rel="canonical" href="https://shannonma.co"/>
   <link rel="icon" type="image/png" href="favicon.png"/>
-  <link rel="preload" as="image" href="me.webp" type="image/webp"/>
-  <meta property="og:title" content="Shannon Ma"/>
-  <meta property="og:description" content="VP Engineering at Patreon. Engineering leader behind products from Patreon, Instagram, Facebook, and Apple."/>
-  <meta property="og:image" content="https://shannonma.co/surf.jpg"/>
+  <link rel="preload" as="image" href="images/me.webp" type="image/webp"/>
+  <link rel="preload" as="image" href="images/patreon.webp" type="image/webp"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://shannonma.co/images/surf.jpg"/>
+  <meta name="theme-color" content="#ffffff"/>
+  <meta property="og:title" content="Shannon Ma — VP Engineering"/>
+  <meta property="og:description" content="Engineer first, leader second. Shipped products used by hundreds of millions at Patreon, Instagram, Facebook, and Apple."/>
+  <meta property="og:image" content="https://shannonma.co/images/surf.jpg"/>
   <meta property="og:url" content="https://shannonma.co"/>
   <meta property="og:type" content="website"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shannon Ma",
+    "url": "https://shannonma.co",
+    "email": "hello@shannonma.co",
+    "jobTitle": "VP Engineering",
+    "worksFor": { "@type": "Organization", "name": "Patreon" },
+    "sameAs": ["https://linkedin.com/in/shannonmma"],
+    "description": "Engineer first, leader second. Shipped products used by hundreds of millions at Patreon, Instagram, Facebook, and Apple."
+  }
+  </script>
   <style>
     * {
       box-sizing: border-box;
@@ -27,25 +45,24 @@
     }
 
     body {
-      max-width: 620px;
-      margin: 3rem auto;
+      max-width: 740px;
+      margin: 2rem auto;
       padding: 0 2rem;
+      overflow-x: hidden;
     }
 
     /* ── Header ── */
     header {
       display: flex;
-      justify-content: space-between;
       align-items: flex-start;
       gap: 2rem;
-      padding-bottom: 0.5rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 2rem;
     }
 
     .header-left {
       display: flex;
-      align-items: flex-start;
-      gap: 1rem;
+      align-items: center;
+      gap: 1.5rem;
       flex: 1;
     }
 
@@ -57,8 +74,8 @@
       font-size: 2rem;
       font-weight: 700;
       letter-spacing: -0.02em;
-      margin-bottom: 0.5rem;
-      color: #1d4ed8;
+      margin-bottom: 0.4rem;
+      color: #111;
       line-height: 1.1;
     }
 
@@ -73,7 +90,7 @@
       gap: 0.5rem;
       font-size: 0.8rem;
       color: #555;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.25rem;
       align-items: center;
     }
 
@@ -91,23 +108,16 @@
     }
 
     .photo {
-      width: 64px;
-      height: 64px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       object-fit: cover;
       flex-shrink: 0;
-      margin-top: 0.2rem;
     }
 
     /* ── Sections ── */
     section {
       margin-bottom: 1.75rem;
-    }
-
-    .section-divider {
-      border: none;
-      border-top: 1px solid #e0e0e0;
-      margin-bottom: 0.75rem;
     }
 
     .section-title {
@@ -117,9 +127,9 @@
       text-transform: uppercase;
       color: #767676;
       padding-top: 0.75rem;
-      padding-bottom: 0.25rem;
+      padding-bottom: 0.5rem;
       border-top: 1px solid #e0e0e0;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.5rem;
     }
 
     /* ── Job entries ── */
@@ -128,19 +138,19 @@
     }
 
     .job:last-child {
-      margin-bottom: 2.5rem;
+      margin-bottom: 0;
     }
 
     .job-header {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 0.1rem;
+      margin-bottom: 0.15rem;
     }
 
     .job-company {
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 1.05rem;
     }
 
     .job-dates {
@@ -150,9 +160,9 @@
     }
 
     .job-title {
-      font-size: 0.85rem;
-      color: #666;
-      margin-bottom: 0.65rem;
+      font-size: 0.875rem;
+      color: #555;
+      margin-bottom: 0.7rem;
     }
 
     ul {
@@ -160,22 +170,125 @@
     }
 
     li {
-      font-size: 0.875rem;
-      margin-bottom: 0.3rem;
-      line-height: 1.55;
+      font-size: 0.9rem;
+      margin-bottom: 0.35rem;
+      line-height: 1.6;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
     }
 
     a {
       color: inherit;
       text-decoration: underline;
       text-decoration-style: dotted;
-      text-decoration-color: #bbb;
+      text-decoration-color: #999;
       text-underline-offset: 2px;
     }
 
     a:hover {
       text-decoration-style: solid;
       text-decoration-color: currentColor;
+    }
+
+    /* ── Patents ── */
+    .patent-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .patent-list li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: 0.875rem;
+    }
+
+    .patent-list li:first-child {
+      padding-top: 0;
+    }
+
+    .patent-list li:last-child {
+      border-bottom: none;
+    }
+
+    .patent-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .patent-name {
+      flex: 1;
+      font-weight: 500;
+    }
+
+    .patent-meta {
+      font-size: 0.78rem;
+      color: #767676;
+      white-space: nowrap;
+    }
+
+    .patent-desc {
+      font-size: 0.825rem;
+      color: #555;
+      line-height: 1.55;
+    }
+
+    /* ── Featured carousel ── */
+    .carousel {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      padding-bottom: 2px;
+    }
+
+    .carousel::-webkit-scrollbar {
+      display: none;
+    }
+
+    a.card {
+      flex: 0 0 28%;
+      scroll-snap-align: start;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: border-color 0.15s;
+    }
+
+    a.card:hover {
+      border-color: #aaa;
+    }
+
+    .card img {
+      width: 100%;
+      aspect-ratio: 2 / 1;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-body {
+      padding: 0.6rem 0.75rem 0.75rem;
+    }
+
+    .card-title {
+      font-weight: 700;
+      font-size: 0.875rem;
+      line-height: 1.3;
+    }
+
+    .card-desc {
+      font-size: 0.78rem;
+      color: #555;
+      line-height: 1.5;
+      margin-top: 0.35rem;
     }
 
     /* ── Print ── */
@@ -198,20 +311,19 @@
       }
 
       .photo {
-        width: 48px;
-        height: 48px;
+        width: 80px;
+        height: 80px;
       }
     }
   </style>
 </head>
 <body>
 
-  <main>
   <header>
     <div class="header-left">
       <picture>
-        <source srcset="me.webp" type="image/webp"/>
-        <img src="me.jpg" alt="Shannon Ma" class="photo" width="64" height="64" fetchpriority="high"/>
+        <source srcset="images/me.webp" type="image/webp"/>
+        <img src="images/me.jpg" alt="Shannon Ma" class="photo" width="120" height="120" fetchpriority="high"/>
       </picture>
       <div class="header-text">
         <h1>Shannon Ma</h1>
@@ -219,14 +331,63 @@
           <a href="mailto:hello@shannonma.co">hello@shannonma.co</a>
           <span class="contact-sep">·</span>
           <span>San Francisco, CA</span>
+          <span class="contact-sep">·</span>
+          <a href="https://linkedin.com/in/shannonmma" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" style="vertical-align: middle; position: relative; top: -1px;"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
         </div>
-        <p class="bio">I build engineering organizations behind consumer products at scale — from first hire to 150+ engineers, from prototype to platform.</p>
+        <p class="bio">Engineer first, leader second. I've shipped products used by hundreds of millions, scaled teams from zero to 160+, and I'm most effective when the problem is hard and the team is small.</p>
       </div>
     </div>
   </header>
 
+  <main>
   <section>
-    <hr class="section-divider">
+    <h2 class="section-title">Selected Work</h2>
+    <div class="carousel">
+      <a href="https://patreon.com" class="card" target="_blank" rel="noopener">
+        <picture>
+          <source srcset="images/patreon.webp" type="image/webp"/>
+          <img src="images/patreon.jpg" alt="Patreon app home feed" loading="eager" fetchpriority="high" width="600" height="300" style="object-position: center top"/>
+        </picture>
+        <div class="card-body">
+          <div class="card-title">Patreon</div>
+          <div class="card-desc">Transformed Patreon into a creator-first social network, growing creator payouts from $3.5B to $10B+ and tripling daily active fans.</div>
+        </div>
+      </a>
+      <a href="https://techcrunch.com/2019/10/03/instagram-launches-threads-a-close-friends-chat-app-with-auto-status/" class="card" target="_blank" rel="noopener">
+        <picture>
+          <source srcset="images/threads.webp" type="image/webp"/>
+          <img src="images/threads.jpg" alt="Threads Close Friends status app" loading="lazy" width="600" height="300" style="object-position: center top"/>
+        </picture>
+        <div class="card-body">
+          <div class="card-title">Threads</div>
+          <div class="card-desc">Built Threads at Instagram — a private app for Close Friends with automatic status updates.</div>
+        </div>
+      </a>
+      <a href="https://vimeo.com/192661848" class="card" target="_blank" rel="noopener">
+        <picture>
+          <source srcset="images/instant-articles.webp" type="image/webp"/>
+          <img src="images/instant-articles.jpg" alt="Facebook Instant Articles on mobile" loading="lazy" width="600" height="300"/>
+        </picture>
+        <div class="card-body">
+          <div class="card-title">Instant Articles</div>
+          <div class="card-desc">Built the platform that brought high-quality news publishers natively into Facebook, replacing slow mobile web with a fast, interactive reading experience.</div>
+        </div>
+      </a>
+      <a href="https://developer.apple.com/videos/play/wwdc2019/245/" class="card" target="_blank" rel="noopener">
+        <picture>
+          <source srcset="images/apple-indoor-maps.webp" type="image/webp"/>
+          <img src="images/apple-indoor-maps.jpg" alt="Apple Indoor Maps showing mall navigation" loading="lazy" width="600" height="300" style="object-position: center 70%"/>
+        </picture>
+        <div class="card-body">
+          <div class="card-title">Apple Indoor Maps</div>
+          <div class="card-desc">Built Apple's indoor positioning technology — the foundation that enables turn-by-turn navigation inside airports, malls, and stadiums.</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Experience</h2>
 
     <div class="job">
       <div class="job-header">
@@ -235,9 +396,9 @@
       </div>
       <p class="job-title">VP Engineering</p>
       <ul>
-        <li>Lead 150+ engineers transforming Patreon into a creator-first social network — working closely with product and design to shape what we build and how we build it. Recognized by <a href="https://www.fastcompany.com/91497300/social-media-most-innovative-companies-2026-reddit-patreon-letterboxd-weverse-doing-things-tumblr-beli-twitch-pinterest-bite-sight">Fast Company</a> and the <a href="https://www.nytimes.com/2025/11/19/opinion/patreon-algorithms-social-media-internet.html">New York Times</a>.</li>
+        <li>Lead 160+ engineers transforming Patreon into a creator-first social network.</li>
+        <li>Grew creator payouts from $3.5B to $10B+ by pushing Patreon beyond subscriptions into new ways for creators to earn — shops, one-time purchases, <a href="https://techcrunch.com/2024/06/25/patreon-introduces-a-gifting-feature-and-other-creator-tools/">gifting</a>, and <a href="https://techcrunch.com/2024/09/17/patreon-launches-features-to-automate-away-creators-administrative-workload-and-help-them-make-more-money/">conversion tools</a>.</li>
         <li>Building AI-native infrastructure for the team — agent-friendly dev environments, cross-repo tooling, and automated tests to ship safely at speed.</li>
-        <li>Grew creator payouts from ~$3.5B to $10B+ by pushing Patreon beyond subscriptions into new ways for creators to earn — shops, one-time purchases, <a href="https://techcrunch.com/2024/06/25/patreon-introduces-a-gifting-feature-and-other-creator-tools/">gifting</a>, and <a href="https://techcrunch.com/2024/09/17/patreon-launches-features-to-automate-away-creators-administrative-workload-and-help-them-make-more-money/">conversion tools</a>.</li>
         <li>Built mobile from scratch; shipped the <a href="https://techcrunch.com/2023/10/04/patreon-launches-new-features-a-redesigned-app-and-a-new-look/">new Patreon app</a> and drove a 3× increase in DAU.</li>
       </ul>
     </div>
@@ -249,8 +410,7 @@
       </div>
       <p class="job-title">Senior Engineering Manager</p>
       <ul>
-        <li>Led 30+ engineers across Direct Messaging, Avatars, and new private communication formats.</li>
-        <li>Built the teams behind <a href="https://techcrunch.com/2019/10/03/instagram-launches-threads-a-close-friends-chat-app-with-auto-status/">Threads</a>, the redesigned Instagram Profile, <a href="https://techcrunch.com/2017/12/05/instagram-stories-highlights/">Stories Archive &amp; Highlights</a>, and <a href="https://techcrunch.com/2018/11/30/how-instagram-close-friends-works/">Close Friends</a>. Awarded 3 patents.</li>
+        <li>Built <a href="https://techcrunch.com/2019/10/03/instagram-launches-threads-a-close-friends-chat-app-with-auto-status/">Threads</a>, <a href="https://techcrunch.com/2018/11/30/how-instagram-close-friends-works/">Close Friends</a>, <a href="https://techcrunch.com/2017/12/05/instagram-stories-highlights/">Stories Highlights</a>, and the redesigned Instagram Profile. Led the 30+ engineer team behind Instagram's private communication surfaces.</li>
       </ul>
     </div>
 
@@ -261,7 +421,7 @@
       </div>
       <p class="job-title">Software Engineer → Engineering Manager</p>
       <ul>
-        <li>Grew <a href="https://www.theatlantic.com/technology/archive/2015/10/72-hours-with-facebook-instant-articles/412171/">Instant Articles</a> readership 10× after transitioning from one of two founding engineers to managing the team. Awarded 1 patent.</li>
+        <li>One of two founding engineers on <a href="https://www.theatlantic.com/technology/archive/2015/10/72-hours-with-facebook-instant-articles/412171/">Instant Articles</a>, building the rendering pipeline that powered the product — then grew readership 10× after transitioning to leading the team.</li>
       </ul>
     </div>
 
@@ -272,14 +432,13 @@
       </div>
       <p class="job-title">Software Engineer</p>
       <ul>
-        <li>Built Apple's first indoor positioning technology concept and iBeacon. Awarded 18 patents.</li>
+        <li>Paired with a research scientist to build the proof of concept for Apple's indoor positioning technology — fingerprinting, particle filtering, and surveying — later productionized as Apple Indoor Maps. Awarded 18 patents.</li>
       </ul>
     </div>
   </section>
 
   <section>
-    <div class="section-title">Education</div>
-
+    <h2 class="section-title">Education</h2>
     <div class="job">
       <div class="job-header">
         <span class="job-company">University of Central Florida</span>
@@ -288,6 +447,167 @@
     </div>
   </section>
 
+  <section>
+    <h2 class="section-title">Patents</h2>
+    <ul class="patent-list">
+      <li>
+        <div class="patent-header">
+          <span class="patent-name"><a href="https://patents.google.com/patent/US20230055421A1">Caption Customization and Editing</a></span>
+          <span class="patent-meta">US 2023/0055421 A1</span>
+        </div>
+        <p class="patent-desc">A social networking system generates speech-to-text captions for videos and allows users to edit the wording, fonts, colors, and timing, as well as obscure offensive content, before sharing the modified video with others.</p>
+      </li>
+      <li>
+        <div class="patent-header">
+          <span class="patent-name"><a href="https://patents.google.com/patent/USD956775S1">Display screen with a graphical user interface</a></span>
+          <span class="patent-meta">US D956775S</span>
+        </div>
+        <p class="patent-desc">A design patent covering the ornamental appearance of a display screen graphical user interface.</p>
+      </li>
+      <li>
+        <div class="patent-header">
+          <span class="patent-name"><a href="https://patents.google.com/patent/US11019021B2">Social network status</a></span>
+          <span class="patent-meta">US 11019021B2</span>
+        </div>
+        <p class="patent-desc">A social networking system receives a user's detailed location and activity data, then generates a less-specific "status" derived from that data to share selectively with designated contacts.</p>
+      </li>
+      <li>
+        <div class="patent-header">
+          <span class="patent-name"><a href="https://patents.google.com/patent/US10585894B2">Systems and methods for preloading content</a></span>
+          <span class="patent-meta">US 10585894</span>
+        </div>
+        <p class="patent-desc">A system pre-calculates content feed layouts in background threads before a user accesses individual items, reducing rendering delays and improving the speed of content presentation on device screens.</p>
+      </li>
+      <li>
+        <div class="patent-header">
+          <span class="patent-name"><a href="https://patents.google.com/patent/US20150127728A1">Lifestyle-Based Social Groups</a></span>
+          <span class="patent-meta">US 20150127728</span>
+        </div>
+        <p class="patent-desc">A system automatically learns users' movement patterns and lifestyle characteristics to create anonymous, ad hoc social groups based on shared location habits and behaviors—without requiring any explicit user request.</p>
+      </li>
+      <li>
+        <div class="patent-header">
+          <span class="patent-name"><a href="https://patents.google.com/patent/US20140364100A1">Category-Based Fence</a></span>
+          <span class="patent-meta">US 20140364100</span>
+        </div>
+        <p class="patent-desc">Instead of fixed GPS coordinates, this geofencing technique defines a virtual region as a group of signal sources sharing a common category identifier, allowing a mobile device to trigger an app whenever it enters any location belonging to that category (e.g., any branch of a retail chain).</p>
+      </li>
+      <li>
+        <div class="patent-header">
+          <span class="patent-name"><a href="https://patents.google.com/patent/US20140364103A1">Non-Intrusive Region Notification</a></span>
+          <span class="patent-meta">US 20140364103</span>
+        </div>
+        <p class="patent-desc">When a mobile device crosses a virtual fence boundary while in power-saving mode, it logs the event silently and only surfaces the associated notification when the user next activates the device, avoiding disruptive alerts and conserving battery.</p>
+      </li>
+      <li>
+        <div class="patent-header">
+          <span class="patent-name"><a href="https://patents.google.com/patent/US20140358835A1">Range Class Estimation for Radio Frequency Devices</a></span>
+          <span class="patent-meta">US 20140358835</span>
+        </div>
+        <p class="patent-desc">A system classifies the distance between a mobile device and an RF signal source into discrete range categories (Immediate, Near, Far, Unknown) by analyzing signal measurements against propagation-model thresholds, then feeds that classification into a state estimator to trigger location-based actions.</p>
+      </li>
+      <li>
+        <div class="patent-header">
+          <span class="patent-name"><a href="https://patents.google.com/patent/US20140274150A1">Proximity Fence</a></span>
+          <span class="patent-meta">US 20140274150</span>
+        </div>
+        <p class="patent-desc">A proximity fence uses RF beacons with no geographic coordinates to define location zones purely by signal proximity, enabling mobile devices to trigger different application behaviors (e.g., store-section-specific promotions) as users move closer to or farther from individual beacons.</p>
+      </li>
+      <li>
+        <div class="patent-header">
+          <span class="patent-name"><a href="https://patents.google.com/patent/US20140213294A1">Reducing Location Search Space</a></span>
+          <span class="patent-meta">US 20140213294</span>
+        </div>
+        <p class="patent-desc">A mobile device first obtains a coarse location estimate upon entering a venue, then requests only the subset of location fingerprint data corresponding to that area from a server, enabling faster and more precise indoor positioning without downloading an entire venue's dataset.</p>
+      </li>
+      <li>
+        <div class="patent-header">
+          <span class="patent-name"><a href="https://patents.google.com/patent/US20140213299A1">Survey Techniques for Generating Location Fingerprint Data</a></span>
+          <span class="patent-meta">US 20140213299</span>
+        </div>
+        <p class="patent-desc">A system generates indoor location fingerprint databases by having a surveyor collect signal measurements at multiple venue locations and orientations—accounting for body-induced signal attenuation—to produce per-location signal profiles used for positioning.</p>
+      </li>
+      <li>
+        <div class="patent-header">
+          <span class="patent-name"><a href="https://patents.google.com/patent/US20140213298A1">Tiered Delivery of Location Data</a></span>
+          <span class="patent-meta">US 20140213298</span>
+        </div>
+        <p class="patent-desc">A location server delivers venue data in two tiers—first sending coarse venue-level data for all nearby locations, then providing detailed fingerprint data only for specific tiles when the device's context warrants it, saving bandwidth while enabling precise indoor positioning.</p>
+      </li>
+      <li>
+        <div class="patent-header">
+          <span class="patent-name"><a href="https://patents.google.com/patent/US20140171098A1">Location Determination Using a State Space Estimator</a></span>
+          <span class="patent-meta">US 20140171098</span>
+        </div>
+        <p class="patent-desc">A mobile device uses a particle filter that combines real-time sensor readings with location fingerprint data and venue map constraints to iteratively refine its indoor position estimate down to room-level accuracy.</p>
+      </li>
+      <li>
+        <div class="patent-header">
+          <span class="patent-name"><a href="https://patents.google.com/patent/US20140171114A1">Location Determination Using Fingerprint Data</a></span>
+          <span class="patent-meta">US 20140171114</span>
+        </div>
+        <p class="patent-desc">A system determines a mobile device's indoor location by statistically comparing live sensor readings (e.g., Wi-Fi signal strengths) against a fingerprint database of pre-mapped environmental measurements, achieving room-level accuracy where GPS is unavailable.</p>
+      </li>
+      <li>
+        <div class="patent-header">
+          <span class="patent-name"><a href="https://patents.google.com/patent/US20140171118A1">Location Fingerprinting</a></span>
+          <span class="patent-meta">US 20140171118</span>
+        </div>
+        <p class="patent-desc">A location server builds a fingerprint database from surveyed signal measurements across multiple signal types (Wi-Fi, Bluetooth, magnetic, cellular), and mobile devices download and match against this data using a particle filter to achieve high-resolution indoor positioning.</p>
+      </li>
+      <li>
+        <div class="patent-header">
+          <span class="patent-name"><a href="https://patents.google.com/patent/US20140171068A1">Managing States of Location Determination</a></span>
+          <span class="patent-meta">US 20140171068</span>
+        </div>
+        <p class="patent-desc">A mobile device's state machine manages transitions between multiple location determination subsystems (e.g., GPS, Wi-Fi fingerprinting, cellular) based on sensor readings, switching methods as the device moves between outdoor and indoor environments.</p>
+      </li>
+      <li>
+        <div class="patent-header">
+          <span class="patent-name"><a href="https://patents.google.com/patent/US20140171100A1">Monitoring a Location Fingerprint Database</a></span>
+          <span class="patent-meta">US 20140171100</span>
+        </div>
+        <p class="patent-desc">A location server detects when signal sources (e.g., Wi-Fi access points) have moved by comparing device-reported signal locations against stored fingerprint data, and removes or deprioritizes displaced sources to prevent indoor positioning errors.</p>
+      </li>
+      <li>
+        <div class="patent-header">
+          <span class="patent-name"><a href="https://patents.google.com/patent/US20140171146A1">Method and Apparatus for Automatically Setting Alarms and Notifications</a></span>
+          <span class="patent-meta">US 20140171146</span>
+        </div>
+        <p class="patent-desc">A device automatically infers user activity (such as sleeping) from on-board and wearable sensors, then adjusts alarms and notifications accordingly—for example, silencing audible alarms when the user is detected to be asleep.</p>
+      </li>
+      <li>
+        <div class="patent-header">
+          <span class="patent-name"><a href="https://patents.google.com/patent/US20140136451A1">Determining Preferential Device Behavior</a></span>
+          <span class="patent-meta">US 20140136451</span>
+        </div>
+        <p class="patent-desc">A server applies machine learning to device attributes and crowd-sourced behavioral data to generate user profile classes, which are sent back to the device so applications can deliver personalized content tailored to individual user preferences.</p>
+      </li>
+      <li>
+        <div class="patent-header">
+          <span class="patent-name"><a href="https://patents.google.com/patent/US20140141796A1">Pathway Matching</a></span>
+          <span class="patent-meta">US 20140141796</span>
+        </div>
+        <p class="patent-desc">An indoor positioning system uses elastic pathway matching within a particle filter so that candidate device locations near—but not exactly on—known venue pathways are probabilistically snapped toward those paths, reflecting realistic pedestrian movement while respecting physical constraints like walls.</p>
+      </li>
+      <li>
+        <div class="patent-header">
+          <span class="patent-name"><a href="https://patents.google.com/patent/US20140141803A1">Tiling of Map Data</a></span>
+          <span class="patent-meta">US 20140141803</span>
+        </div>
+        <p class="patent-desc">A system divides venue maps into discrete downloadable tiles containing fingerprint and structural data, fetching only the tiles relevant to the device's current and predicted location so that indoor navigation remains accurate while minimizing memory use and download time.</p>
+      </li>
+      <li>
+        <div class="patent-header">
+          <span class="patent-name"><a href="https://patents.google.com/patent/US20140156180A1">Reduction of the Impact of Hard Limit Constraints in State Space Models</a></span>
+          <span class="patent-meta">US 20140156180</span>
+        </div>
+        <p class="patent-desc">To prevent particle filter depletion when estimating indoor device locations, this system splits propagation steps into sub-steps to route candidate locations around physical obstacles, and dynamically increases motion-model noise to recover when particles become trapped in dead ends.</p>
+      </li>
+    </ul>
+  </section>
+
   </main>
+
 </body>
 </html>
